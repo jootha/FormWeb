@@ -1,0 +1,60 @@
+h1{
+ text-align:center;
+ font-size:300%;
+ color:  #C8D9DB;
+ margin:0%
+}
+h3{
+  color: #C8D9DB;
+  font-size:150%
+}
+
+label{
+  width:350px;
+  display:inline-block;
+  color:#C8D9DB;
+}
+
+img{
+/*   De base en display:inline-block; */
+  max-width:100%;
+}
+input, textarea, button, select{
+  background-color:#C8D9DB;
+}
+.inputHover{
+  border :1px solid blue;
+  box-sizing:border-box;
+}
+#div_img{
+    text-align:center;
+}
+
+#main_div{
+  font-family:sans-serif;
+  margin:15%;
+  margin-top:0%;
+  border:#c8d9db 2px solid;
+  padding:1%;
+  color: #C8D9DB;
+}
+#autrediv{
+  display:inline-block;
+}
+#valider{
+   text-align:center;
+    margin-left:46%;	
+}
+textarea, #acq{
+  display:none;  
+}
+body{
+  background:linear-gradient(#141414, #34484F);
+}
+#acq{
+  text-align:center;
+  width: 100%;
+}
+
+/* #70797E */
+/* #c8d9db */

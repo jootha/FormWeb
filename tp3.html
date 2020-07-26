@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="tp3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="main_div">
+	    <div id="div_img">
+	    <img src="https://www.geekplay.fr/wp-content/uploads/2018/09/steam-profiter-dune-reduction-jusqua-85-sur-la-franchise-the-witcher-81424.jpg">
+	    </div>
+	    <h1>Qui es-tu WITCHEUR ?</h1>
+	    <form action="pageResultat.php" method="post">
+	      <h3 id="quelques_infos">Quelques informations sur toi !</h3>
+	      <br>
+	      <label> Ton prenom</label>
+	      <input type="text" id="uprenom" name="prenom" 
+	      placeholder="" size=30>
+	      <br>
+	      <label style="width: 350px;display: inline-block;"> Ton nom</label>
+	      <input type="text" id="unom" name="nom" onkeypress="passeAuRouge()"
+	      placeholder="" size=30>
+	      <br>
+	      <label style="width: 350px;display: inline-block;"> Ton age </label>
+	      <input type="number" id="unage" name="age" 
+	      placeholder="" size=10>
+	      <br>
+	      <label style="width: 350px;display: inline-block;"> Genre</label>
+	      <input type="radio" id="homme" name="genre" 
+	      placeholder="" size=30 checked>
+	      homme
+	      <input type="radio" id="femme" name="genre" 
+	      placeholder="" size=30>
+	      femme
+	      <input type="radio" class='autre' id="autre" name="genre" 
+	      placeholder="" size=30>
+	      autre
+	      
+	      <h3 id="Préférences">Quels sont tes personnages préférés ? </h3>
+	      <br>
+	      <label> Quel est ton personage mâl préféré ?</label>
+	      <input type="radio" id="Géralt" name="personage" 
+	      placeholder="" size=30 checked>
+	      Géralt
+	      <input type="radio" id="Jasquier" name="personage" 
+	      placeholder="" size=30>
+	      Jasquier
+	      <input type="radio" id="Zoltan" name="personage" placeholder="" size=30>
+	      Zoltan
+	      <input type="radio" id='autreRadio' class="autre" name="personage" value="autre"
+	      placeholder="" size=30>
+	      Autre
+	      <textarea class="saisie_autre" id="saisie_autre_mal" rows="1" cols="20">Votre réponse ?
+	      </textarea> 
+	     <br>	
+	      <label> Préfères-tu Triss ou Yennefer ?</label>
+	      <select id='selectFem'>
+		<option value="Triss">Triss</option>
+		<option value="Yennefer">Yennefer</option>
+		<option value="both">Pourquoi pas les 2 ?</option>
+		<option id='autreSelect' class='autre' value="autre" >Autre</option>
+	      </select>
+	      <textarea class="saisie_autre" id="saisie_autre_fem" rows="1" cols="20">Votre réponse ?
+	      </textarea>
+	      <br><br>
+	      
+	      <button id="valider">valider</button>
+	    </form>	    
+    </div>
+<script src="tp3.js"></script>
+</body>
+</html>
